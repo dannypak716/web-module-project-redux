@@ -55,8 +55,10 @@ const Movie = (props) => {
 
 const mapStateToProps = (state) => {
     return({
-        movies: state.movies
+        movies: state.movieState.movies,
+        displayFavorites: state.favoritesState.displayFavorites
     })
 }
 
 export default connect(mapStateToProps, { deleteMovie })(Movie);
+// did not use dispatch, used mapActionsToProps

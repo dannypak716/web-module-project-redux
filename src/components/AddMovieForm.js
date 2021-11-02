@@ -73,8 +73,9 @@ const AddMovieForm = (props) => {
 
 const mapStateToProps = (state) => {
     return({
-        movies: state.movies
+        movies: state.movieState.movies
     })
 }
 
 export default connect(mapStateToProps)(AddMovieForm);
+// used dispatch and not mapActionsToProps
