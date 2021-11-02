@@ -3,11 +3,11 @@ export const ADD_FAVORITES = 'ADD_FAVORITES';
 export const REMOVE_FAVORITES = 'REMOVE_FAVORITES';
 
 export const toggleFavorites = (id) => {
-    return({type: TOGGLE_FAVORITES, payload:id});
+    return({type: TOGGLE_FAVORITES});
 }
 
-export const addFavorites = (id) => {
-    return({type: ADD_FAVORITES, payload:id})
+export const addFavorites = (movie) => {
+    return({type: ADD_FAVORITES, payload:movie})
 }
 
 export const removeFavorites = (id) => {
